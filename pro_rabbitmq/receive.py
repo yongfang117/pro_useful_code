@@ -28,9 +28,8 @@ def callback(ch, method, properties, body):
 
     ch.basic_ack(delivery_tag=method.delivery_tag)  # 发送ack消息
 
-
-# 添加不按顺序分配消息的参数,可有可无
-# channel.basic_qos(prefetch_count=1)
+# 设置公平调度
+# channel.basic_qos(prefetch_count=1)  # 添加不按顺序分配消息的参数,可有可无
 
 # 5.关联队列、并设置消息中队列处理的函数
 # channel.basic_consume(callback, queue=queue, no_ack=False)  # no_ack来标记是否需要发送ack，默认是False，开启状态 pika=0.10.0可以这样

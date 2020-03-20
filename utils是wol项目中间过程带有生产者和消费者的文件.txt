@@ -1,1 +1,6 @@
-utils是wol项目中间过程带有生产者和消费者的文件,后来用了其他的.
+﻿pro_drf  	==demo1-demo3入门代码
+pro_tk 	==tkinter 使用入门
+sort_tool  ==按字母排序（中间不能有括号）
+utils 	==是wol项目中间过程带有生产者和消费者的文件,后来用了其他的.
+pro_upload  ==上传图片
+
